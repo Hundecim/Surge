@@ -6,6 +6,7 @@
 
 # > 雪球 开屏广告 @Runestoner分享
 ^https:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json\? - reject
+^https:\/\/47\.75\.231\.220\/snowpard\/launch_strategy\/query\.json\? - reject
 
 
 [Map Local]
