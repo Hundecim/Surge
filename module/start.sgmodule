@@ -4,20 +4,16 @@
 
 [URL Rewrite]
 
-# > 雪球 开屏广告 @Runestoner分享
-^https:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json\? - reject
-^https:\/\/47\.75\.231\.220\/snowpard\/launch_strategy\/query\.json\? - reject
+# > 雪球 开屏广告
+"^https?:\/\/(api|promo)\.xueqiu\.com\/promotion\/(display_cache|display_ad|feed_display|search_ad)" - reject
+"^https?:\/\/api\.xueqiu\.com\/ads\/display" - reject
+"^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json" - reject
 
 
 [Map Local]
 
-# > 雪球 开屏广告 @Runestoner分享
-^https?:\/\/xqimg\.imedao\.com\/[a-z0-9]{24}\.jpg$  data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
-# 感谢@Joe Joy分享
-^https:\/\/api\.xueqiu\.com\/snowpard\/launch_strategy\/query\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
-^https:\/\/47\.75\.231\.220\/snowpard\/launch_strategy\/query\.json\? data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 
 [MITM]
 
-hostname = %APPEND% api.xueqiu.com,47.75.231.220
+hostname = %APPEND% api.xueqiu.com,promo.xueqiu.com,xueqiu.com,
