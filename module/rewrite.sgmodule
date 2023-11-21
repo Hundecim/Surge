@@ -262,9 +262,12 @@ https://ios.sspai.com/api/v3/recommend/page/get\?ad.*ios_home_modal - reject
 ^https?:\//m\.ads\.8le8le\.com\/adShow - reject
 
 # > 雪球 开屏广告
-"^https?:\/\/(api|promo)\.xueqiu\.com\/promotion\/(display_cache|display_ad|feed_display|search_ad)" - reject
-"^https?:\/\/api\.xueqiu\.com\/ads\/display" - reject
-"^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json" - reject
+^https?:\/\/(api|promo)\.xueqiu\.com\/promotion\/(display_cache|display_ad|feed_display|search_ad) - reject
+^https?:\/\/api\.xueqiu\.com\/ads\/display - reject
+^https?:\/\/.+?\/promotion\/(display_cache|display_ad|feed_display|search_ad) - reject
+^https?:\/\/.+?\/brand\/search\/v1\.json - reject
+^https?:\/\/api\.xueqiu\.com\/brand\/search\/v1\.json - reject
+^https?:\/\/.+?\/snowpard\/launch_strategy\/query\.json - reject
 
 # > 下厨房
 ^https?:\/\/api\.xiachufang\.com\/v\d\/ad/ - reject
