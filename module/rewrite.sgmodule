@@ -896,7 +896,7 @@ https?:\/\/api\.taptapdada\.com\/startup\-logo\/v1\/combo\? data="https://raw.gi
 # > 招商银行
 ^https?:\/\/webappcfg\.paas\.cmbchina\.com\/v\d\/func\/getmarketconfig data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
 # 首页横幅广告
-^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
+# ^https:\/\/mbmodule-openapi\.paas\.cmbchina\.com\/graphic\/v2\/module\/graphic data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-dict.json"
 
 # > 中信银行
 ^https?:\/\/wap.bank\.ecitic\.com:6443\/NMBFOServer\/cbframework\.do\?act=CUBEPAGEDATA data="https://raw.githubusercontent.com/mieqq/mieqq/master/reject-200.txt"
